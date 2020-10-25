@@ -1,7 +1,44 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+@inject HttpClient Http
 
-Welcome to your new app.
+<h1>Actions history</h1>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+@if (actions == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Action Date</th>
+                <th>Action Informations</th>
+                <th>Input Data</th>
+                <th>Output Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var action in actions)
+            {
+                <tr>
+                    <td>@action.ActionDate</td>
+                    <td>@action.ActionInfo</td>
+                    <td>@action.Input</td>
+                    <td>@action.Output</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Core.Entities.Action[] actions;
+
+    protected override async Task OnInitializedAsync()
+    {
+        actions = await Http.GetFromJsonAsync<Core.Entities.Action[]>("https://localhost:5001/Actions");
+    }
+}
+
