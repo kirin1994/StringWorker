@@ -6810,8 +6810,8 @@
     },
     "Core/1.0.0": {
       "type": "project",
-      "path": "../Core2/Core.csproj",
-      "msbuildProject": "../Core2/Core.csproj"
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6857,6 +6857,9 @@
           "projectReferences": {
             "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core2\\Core.csproj": {
               "projectPath": "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core2\\Core.csproj"
+            },
+            "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core\\Core.csproj"
             }
           }
         }

@@ -150,7 +150,6 @@ C:\Users\Adrian\source\repos\StringWorker\WebClient\bin\Debug\netstandard2.1\Sys
 C:\Users\Adrian\source\repos\StringWorker\WebClient\bin\Debug\netstandard2.1\System.Text.Encodings.Web.dll
 C:\Users\Adrian\source\repos\StringWorker\WebClient\bin\Debug\netstandard2.1\System.Text.Json.dll
 C:\Users\Adrian\source\repos\StringWorker\WebClient\bin\Debug\netstandard2.1\System.Threading.Tasks.Extensions.dll
-C:\Users\Adrian\source\repos\StringWorker\WebClient\obj\Debug\netstandard2.1\WebClient.csprojAssemblyReference.cache
 C:\Users\Adrian\source\repos\StringWorker\WebClient\obj\Debug\netstandard2.1\WebClient.AssemblyInfoInputs.cache
 C:\Users\Adrian\source\repos\StringWorker\WebClient\obj\Debug\netstandard2.1\WebClient.AssemblyInfo.cs
 C:\Users\Adrian\source\repos\StringWorker\WebClient\obj\Debug\netstandard2.1\WebClient.csproj.CoreCompileInputs.cache

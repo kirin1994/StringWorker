@@ -5642,6 +5642,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Core >= 1.0.0",
       "Infrastructure >= 1.0.0"
     ]
   },
@@ -5678,6 +5679,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core\\Core.csproj"
+            },
             "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Infrastruct\\Infrastructure.csproj": {
               "projectPath": "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Infrastruct\\Infrastructure.csproj"
             }
