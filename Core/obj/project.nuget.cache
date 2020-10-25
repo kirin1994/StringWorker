@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "25v79h9Sm+31qWa4QtCpuUbvSPJmsfZb2k4RAcIcp5k/Fn5tNVdUQRFCDRWYdLsX35UiWeZC2y7u1+EOdesSFQ==",
+  "dgSpecHash": "KBl7DDYoZVs9wivJhuVdzvLjliSVInBrx5Ui0BiydOC/hiurkmMVL/GSF7sMOD+IOTTduVxekzH8yqUup1xUSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core2\\Core.csproj",
+  "projectFilePath": "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

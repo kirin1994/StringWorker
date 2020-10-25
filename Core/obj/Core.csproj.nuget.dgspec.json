@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core2\\Core.csproj": {}
+    "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core2\\Core.csproj": {
+    "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core2\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core2\\Core.csproj",
+        "projectPath": "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\Adrian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core2\\obj\\",
+        "outputPath": "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
