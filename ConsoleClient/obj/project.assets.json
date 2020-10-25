@@ -5705,8 +5705,8 @@
     },
     "Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../Infrastruct/Infrastructure.csproj",
-      "msbuildProject": "../Infrastruct/Infrastructure.csproj"
+      "path": "../Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5749,8 +5749,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Infrastruct\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Infrastruct\\Infrastructure.csproj"
+            "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

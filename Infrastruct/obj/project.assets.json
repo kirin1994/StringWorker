@@ -6855,6 +6855,9 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
+            "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core2\\Core.csproj": {
+              "projectPath": "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core2\\Core.csproj"
+            },
             "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core\\Core.csproj": {
               "projectPath": "C:\\Users\\Adrian\\source\\repos\\StringWorker\\Core\\Core.csproj"
             }

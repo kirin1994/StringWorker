@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{A4F58226-D387-42A2-9484-F70207FFC34D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EF4103FF-331F-4BFA-8DA5-8CC515F7398A} = {EF4103FF-331F-4BFA-8DA5-8CC515F7398A}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{BCA2043E-B069-4A51-8F4D-1C16072659EA}"
 EndProject
@@ -21,7 +24,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebClient", "WebClient\WebC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreTests", "CoreTests\CoreTests.csproj", "{2A6BCECB-AAFE-4E79-A9DC-DADA5D4400D4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastruct\Infrastructure.csproj", "{EF4103FF-331F-4BFA-8DA5-8CC515F7398A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{EF4103FF-331F-4BFA-8DA5-8CC515F7398A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
