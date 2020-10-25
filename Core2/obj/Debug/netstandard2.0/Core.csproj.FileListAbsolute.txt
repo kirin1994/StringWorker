@@ -1,0 +1,9 @@
+C:\Users\Adrian\source\repos\StringWorker\Core2\bin\Debug\netstandard2.0\Core.deps.json
+C:\Users\Adrian\source\repos\StringWorker\Core2\bin\Debug\netstandard2.0\Core.dll
+C:\Users\Adrian\source\repos\StringWorker\Core2\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\Adrian\source\repos\StringWorker\Core2\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Users\Adrian\source\repos\StringWorker\Core2\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Users\Adrian\source\repos\StringWorker\Core2\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\source\repos\StringWorker\Core2\obj\Debug\netstandard2.0\Core.dll
+C:\Users\Adrian\source\repos\StringWorker\Core2\obj\Debug\netstandard2.0\Core.pdb
+C:\Users\Adrian\source\repos\StringWorker\Core2\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
