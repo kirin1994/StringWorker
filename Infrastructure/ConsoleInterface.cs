@@ -87,11 +87,8 @@ namespace Infrastructure
 
         private void PluginMode(Type plugin)
         {
-            Console.WriteLine("----------------------------------");
-            Console.WriteLine($"-----------{plugin.Name}");
-            Console.WriteLine("----------------------------------");
+            Console.WriteLine($"Chosen plugin: {plugin.Name}");
             Console.WriteLine("If you want to go back on main menu type 'exit' and press ENTER.");
-            Console.WriteLine(" ");
 
             while (true)
             {
@@ -103,12 +100,9 @@ namespace Infrastructure
                 var service = ServiceManager.GetPluginService(plugin);
 
                 Console.WriteLine(" ");
-                Console.WriteLine("----------------------------------");
-                Console.WriteLine("-----------Plugin output----------");
-                Console.WriteLine("----------------------------------");
                 var output = service.Execute(input);
-                Console.WriteLine(output);
-                Console.WriteLine();
+                Console.WriteLine($"Output: {output}");
+                Console.WriteLine(" ");
                 _logger.LogAction(plugin.Name, input, output);
             }
         }
@@ -121,8 +115,8 @@ namespace Infrastructure
             Console.WriteLine("----------------------------------");
             Console.WriteLine("---------Interpreter Mode---------");
             Console.WriteLine("----------------------------------");
-            Console.WriteLine("Syntax: pluginName inputData");
-            Console.WriteLine("I.e: SumPlugin 12+14+16");
+            Console.WriteLine("Syntax: PluginName InputData");
+            Console.WriteLine("Example: SumPlugin 12+14+16");
             Console.WriteLine("To turn off, type 'exit' and press ENTER.");
             Console.WriteLine(" ");
 

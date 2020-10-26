@@ -2,6 +2,7 @@
 using Infrastructure.Loggers;
 using Infrastructure.Persistance;
 using Infrastructure.Plugins;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Linq;
@@ -17,8 +18,8 @@ namespace Infrastructure
         {
             _services = new ServiceCollection();
             var addPluginsAsSingletones = ConsoleInterface.ShouldAddPluginsAsSingletons();
-            PluginsFactory.AddPlugins(_services, addPluginsAsSingletones);
-            _services.AddDbContext<ActionDbContext>();
+            PluginsService.Instance.AddPlugins(_services, addPluginsAsSingletones);
+            _services.AddDbContext<ActionDbContext>(options => options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=StringWorker;Integrated Security=True"));
             _services.AddSingleton<IActionRepository, ActionRepository>();
             _services.AddSingleton<IAppLogger, DatabaseLogger>();
             ServiceProvider = _services.BuildServiceProvider();

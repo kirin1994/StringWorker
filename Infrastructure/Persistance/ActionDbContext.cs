@@ -7,9 +7,11 @@ namespace Infrastructure.Persistance
     {
         public DbSet<Action> Actions { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=StringWorker;Integrated Security=True");
-        }
+        public ActionDbContext(DbContextOptions<ActionDbContext> options) :base(options) { } 
+
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlServer();
+        //}
     }
 }

@@ -7,7 +7,7 @@ namespace ConsoleClient
     {
         static void Main(string[] args)
         {
-            var availablePlugins = PluginsFactory.GetAvailablePluginsTypes();
+            var availablePlugins = PluginsService.Instance.GetAvailablePluginsTypes();
             _ = new ServiceManager();
             var consoleInterface = new ConsoleInterface(availablePlugins, ServiceManager.GetLogger());
             consoleInterface.DisplayStartScreen();

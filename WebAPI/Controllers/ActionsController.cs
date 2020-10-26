@@ -17,7 +17,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<List<Action>> Get()
+        public async Task<List<Action>> GetActions()
         {
             return await _actionRepository.GetActionsAsync();
         }
