@@ -29,7 +29,6 @@ namespace WebAPI
             services.AddControllers();
             services.AddScoped<IActionAsyncRepository, ActionAsyncRepository>();
             services.AddDbContext<ActionDbContext>();
-            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,10 +42,6 @@ namespace WebAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.UseCors();
 
             app.UseEndpoints(endpoints =>
             {
