@@ -121,6 +121,8 @@ namespace Infrastructure
             Console.WriteLine("----------------------------------");
             Console.WriteLine("---------Interpreter Mode---------");
             Console.WriteLine("----------------------------------");
+            Console.WriteLine("Syntax: pluginName inputData");
+            Console.WriteLine("I.e: SumPlugin 12+14+16");
             Console.WriteLine("To turn off, type 'exit' and press ENTER.");
             Console.WriteLine(" ");
 
@@ -177,6 +179,7 @@ namespace Infrastructure
                     switch (input)
                     {
                         case 0:
+                            _logger.LogAction("Application closed");
                             Environment.Exit(0);
                             break;
                         case 1:
