@@ -1,7 +1,10 @@
-﻿using Infrastructure.Loggers;
+﻿using Core.Plugins;
+using Infrastructure.Loggers;
 using Infrastructure.Persistance;
 using Infrastructure.Plugins;
 using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Linq;
 
 namespace Infrastructure
 {
@@ -24,6 +27,11 @@ namespace Infrastructure
         public static IAppLogger GetLogger()
         {
             return ServiceProvider.GetService<IAppLogger>();
+        }
+
+        public static IPlugin GetPluginService(Type type)
+        {
+            return ServiceProvider.GetServices<IPlugin>().FirstOrDefault(s => s.GetType() == type);             
         }
 
     }

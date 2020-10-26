@@ -90,20 +90,29 @@ namespace Infrastructure
             Console.WriteLine("----------------------------------");
             Console.WriteLine($"-----------{plugin.Name}");
             Console.WriteLine("----------------------------------");
-            Console.WriteLine("Write input data and confirm with ENTER button.");
-
-            var input = Console.ReadLine();
-            var service = ServiceManager.ServiceProvider.GetServices<IPlugin>().FirstOrDefault(s => s.GetType() == plugin);
-
+            Console.WriteLine("If you want to go back on main menu type 'exit' and press ENTER.");
             Console.WriteLine(" ");
-            Console.WriteLine("----------------------------------");
-            Console.WriteLine("-----------Plugin output----------");
-            Console.WriteLine("----------------------------------");
-            var output = service.Execute(input);
-            Console.WriteLine(output);
-            Console.WriteLine();
-            _logger.LogAction(plugin.Name, input, output);
+
+            while (true)
+            {
+                Console.WriteLine("Write input data and confirm with ENTER button.");
+                var input = Console.ReadLine();
+                if (input.ToLower() == "exit")
+                    break;
+
+                var service = ServiceManager.GetPluginService(plugin);
+
+                Console.WriteLine(" ");
+                Console.WriteLine("----------------------------------");
+                Console.WriteLine("-----------Plugin output----------");
+                Console.WriteLine("----------------------------------");
+                var output = service.Execute(input);
+                Console.WriteLine(output);
+                Console.WriteLine();
+                _logger.LogAction(plugin.Name, input, output);
+            }
         }
+
 
         public void InterpreterMode()
         {
@@ -129,11 +138,13 @@ namespace Infrastructure
                         var plugin = _plugins.FirstOrDefault(p => p.Name.ToLower() == input[0].ToLower());
                         if (plugin != null)
                         {
-                            var service = ServiceManager.ServiceProvider.GetServices<IPlugin>().FirstOrDefault(s => s.GetType() == plugin);
+                            var service = ServiceManager.GetPluginService(plugin);
                             var output = service.Execute(input[1]);
                             Console.WriteLine($">> {output}");
                             _logger.LogAction($"Used plugin: {(input[0])}", input[1], output);
-                        } else {
+                        }
+                        else
+                        {
                             Console.WriteLine("Given plugin does not exist. Try again.");
                             Console.WriteLine(" ");
                             _logger.LogAction($"Wrong plugin chosen({input[0]})");
@@ -152,7 +163,7 @@ namespace Infrastructure
 
         public void ChooseMode()
         {
-            Console.Clear(); 
+            Console.Clear();
             while (true)
             {
                 DisplayStartScreen();
